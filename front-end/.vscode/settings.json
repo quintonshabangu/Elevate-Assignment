@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/7c5812f8-a307-4a39-b393-acb46651c85f/resourceGroups/DefaultResourceGroup-JNB/providers/Microsoft.Web/sites/fitness-data-challenge-web",
+    "appService.deploySubpath": "dist\\health-data"
+}

@@ -1,0 +1,11 @@
+<div class="hapi__token-container">
+  <h1 class="title is-3">Connect your Health Data</h1>
+  <p class="has-text-centered">
+    <button (click)="connect(registerPublicToken, http, userContext.userIdentifier)" class="is-link"
+      [attr.data-hapi-token]="token">
+      <img id='connect-health-data-btn' src='https://connect.humanapi.co/assets/button/blue.png'/>
+    </button>
+  </p>
+</div>
+
+<h2 class="title is-3" *ngIf="userContext.userTokens">User already connected. You can view the dashboard. The connect button will update an existing connection</h2>

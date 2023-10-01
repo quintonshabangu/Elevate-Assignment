@@ -1,0 +1,16 @@
+
+<div *ngIf="userContext.userTokens?.accessToken else elseBlock" class="graph-container">
+        <h2>Activity Summary for the past 7 days</h2>
+        <canvas baseChart
+                [data]="barChartData"
+                [options]="barChartOptions"
+                [plugins]="barChartPlugins"
+                [legend]="barChartLegend"
+                [type]="'bar'">
+        </canvas>
+</div>
+<ng-template #elseBlock>
+        <div *ngIf="!userContext.userTokens?.accessToken">
+                <h2>Connect to a service before viewing data</h2>
+        </div>
+</ng-template>
